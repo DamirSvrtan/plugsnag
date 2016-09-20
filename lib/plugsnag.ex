@@ -33,7 +33,7 @@ defmodule Plugsnag do
             port: conn.port,
             scheme: conn.scheme,
             query_string: conn.query_string,
-            body: Poison.encode!(conn.body_params, pretty: true)
+            body: conn.body_params
           }
         }
       end
